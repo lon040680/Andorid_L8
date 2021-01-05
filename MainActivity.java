@@ -38,18 +38,18 @@ public class MainActivity extends AppCompatActivity {
                 context, android.R.layout.simple_spinner_dropdown_item,
                 drink
         );
-
-        //接受上方轉換來的資料
+        //接受上方轉換的資料
         sp_drink.setAdapter(adapter);
 
         //第三組初始化
+        //直接建立資料
         String[] dessert = {"布丁", "巧克力甜筒", "抹茶蛋糕"};
         //ArrayAdapter轉換
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(
                 context, android.R.layout.simple_spinner_dropdown_item,
                 dessert
         );
-        //接受上方轉換來的資料
+        //接受上方轉換的資料
         adapter2.setDropDownViewResource(R.layout.mylayout);
         sp_dessert.setAdapter(adapter2);
 
@@ -65,9 +65,10 @@ public class MainActivity extends AppCompatActivity {
                s2 = sp_drink.getSelectedItem().toString();
                //3
                s3 = sp_dessert.getSelectedItem().toString();
-
-               //Toast.makeText(context, s1+"\n"+s2+"\n"+s3, Toast.LENGTH_LONG).show();
-               Snackbar.make(v, s1+"\t"+s2+"\t"+s3, Snackbar.LENGTH_LONG).show();
+                
+               //則一使用
+               Toast.makeText(context, s1+"\n"+s2+"\n"+s3, Toast.LENGTH_LONG).show();
+               // Snackbar.make(v, s1+"\t"+s2+"\t"+s3, Snackbar.LENGTH_LONG).show();
            }
         });
     }
