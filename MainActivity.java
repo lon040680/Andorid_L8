@@ -39,15 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 drink
         );
 
-        //sp_drink 加監聽器 錯誤
-//        sp_drink.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                String str = parent.getItemAtPosition(position).toString();
-//                //Toast.makeText(context, str, Toast.LENGTH_LONG);
-//            }
-//        });
-
         //接受上方轉換來的資料
         sp_drink.setAdapter(adapter);
 
@@ -75,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                //3
                s3 = sp_dessert.getSelectedItem().toString();
 
-               //Toast.makeText(context, s1+"\n"+s2+"\n"+s3, Toast.LENGTH_LONG);
+               //Toast.makeText(context, s1+"\n"+s2+"\n"+s3, Toast.LENGTH_LONG).show();
                Snackbar.make(v, s1+"\t"+s2+"\t"+s3, Snackbar.LENGTH_LONG).show();
            }
         });
