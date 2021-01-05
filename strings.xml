@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="ok">OK</string>
+
+    <string-array name="meal">
+        <item>美式漢堡</item>
+        <item>豬肉漢堡</item>
+        <item>牛肉漢堡</item>
+        <item>泡菜漢堡</item>
+        <item>米漢堡</item>
+    </string-array>
+
+    <string-array name="drink">
+        <item>可樂</item>
+        <item>綠茶</item>
+        <item>奶茶</item>
+        <item>果汁</item>
+    </string-array>
+
+</resources>
